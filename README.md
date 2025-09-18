@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 2 - Authentication
 
 1. Ensure you have docker and docker compose installed
 
@@ -13,7 +13,7 @@
     git clone https://github.com/FIS-F25/lab2
     ```
 
-3. Change into the project directory:
+3. Change into the project directory
 
     ```bash
     cd lab2
@@ -25,11 +25,19 @@
     sudo chmod 777 recordings
     ```
 
-5. Run the lab:
+5. Stop previous labs (if any)
+
+    ```bash
+    docker kill terminal renderer nginx
+    docker container prune -f
+    ```
+
+6. Run the lab:
 
     ```bash
     docker compose pull
     docker compose up -d
     ```
 
-6. Access the lab at <http://localhost:8080>
+7. Access the lab at <http://localhost:8080>
+
